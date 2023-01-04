@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "vme",
+  "version": "${version}",
+  "name": "Vanilla Materials Expaneded",
+  "description": "This mod expands the vanilla item materials",
+  "authors": [
+    "Pois1x",
+    "Globox_Z"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "MIT",
+  "icon": "assets/vme/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.vme.VMEMain"
+    ],
+    "client": [
+      "net.vme.VMEClient"
+    ],
+    "modmenu": [
+      "net.vme.config.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "vme.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric-api": "*",
+    "minecraft": "1.19.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
